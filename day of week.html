@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Day Of Week</title>
+    <link href='https://fonts.googleapis.com/css?family=DynaPuff' rel='stylesheet'>
+
+</head>
+<style>
+#d1{
+    height: 770px;
+    width: 100%;
+    background-color: rgb(227, 201, 236);
+    font-family: 'DynaPuff';font-size: 42px;
+    color:  rgb(127, 88, 139);
+
+}
+#b1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(127, 88, 139);
+    border:3px solid rgb(186, 152, 197);
+    font-family: 'DynaPuff';font-size: 20px;
+    color: rgb(186, 152, 197);
+
+}
+#b2{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(127, 88, 139);
+    border:3px solid rgb(186, 152, 197);
+    font-family: 'DynaPuff';font-size: 20px;
+    color: rgb(186, 152, 197);
+
+
+}
+#b3{
+    
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(127, 88, 139);
+    border:3px solid rgb(186, 152, 197);
+    font-family: 'DynaPuff';font-size: 20px;
+    color: rgb(186, 152, 197);
+    
+
+}
+#b4{
+     height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    background-color: rgb(127, 88, 139);
+    border:3px solid rgb(186, 152, 197);
+    font-family: 'DynaPuff';font-size: 20px;
+    color: rgb(186, 152, 197);
+
+
+}
+#result{
+color: rgb(127, 88, 139);
+
+    font-family: 'DynaPuff';font-size: 30px;
+
+}
+#p{
+    color: rgb(127, 88, 139); 
+    font-family: 'DynaPuff';font-size: 30px;
+    
+
+}
+
+
+</style>
+
+
+
+<body align="center">
+    <div id="d1">
+<div class="row" style="height: 60px;"></div>
+<h1>DAY OF WEEK</h1>
+<div class="row" style="height: 10px;"></div>
+<p>TODAY IS :</p>
+
+<button onclick="abc()" id="b1">DATE</button>
+<button onclick="mno()" id="b2">DAY</button>
+<button onclick="pqrs()" id="b3">MONTH</button>
+<button onclick="sop()" id="b4">YEAR</button>
+
+<p id="result"></p>
+    </div>
+    <script>
+        function abc(){
+        var d=new Date()
+
+
+        var date = d.getDate();
+        // var month = d.getMonth();
+
+
+        document.getElementById("result").innerHTML=date
+
+
+
+        }
+
+        function mno(){
+            var dy=new Date()
+
+            const weekday = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
+            let day = weekday[dy.getDay()];
+            
+
+
+            var date=dy.getDay();
+        document.getElementById("result").innerHTML=weekday[dy.getDay()];
+        }
+
+function pqrs(){
+
+    // var m=new Date()
+    
+
+
+    
+    // var month=m.getMonth()
+
+
+
+    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+
+const d = new Date();
+let name = month[d.getMonth()];
+document.getElementById("result").innerHTML= month[d.getMonth()];
+
+
+}
+function sop(){
+
+var y=new Date()
+var year=y.getFullYear()
+document.getElementById("result").innerHTML=year
+}
+
+    </script>
+</body>
+</html>
